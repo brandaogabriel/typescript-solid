@@ -1,4 +1,4 @@
-# Single Responsibility Principle (Princípio da responsabildiade Única) (S)
+# Single Responsibility Principle (Princípio da responsabilidade Única) (S)
 
 ## Significado:
 Uma classe deve ter apenas um motivo para mudar (evite conjunções aditivas). Este princípio está intimamente ligado com outro, conhecido como Separation of concerns.
