@@ -38,4 +38,4 @@ Para resolver esse problemas, faremos uso de uma classe abstrata e aplicamos o p
 ## Conclusão:
 Podemos concluir que, aplicando esse princípio em nossos projetos, para o exemplo citado, percebemos o quanto flexível ele fica caso seja necessário adicionar novos tipos de desconto, bem como, aplicar uma lógica diferente para determinado tipo de desconto, sem mexer na classe do carrinho e em outras classes, apenas na classe do desconto.
 
-**Caso queira executar o projeto e testá-lo, execute o `srp/main.ts`.**
+**Caso queira executar o projeto e testá-lo, execute o `ocp/main.ts`.**
