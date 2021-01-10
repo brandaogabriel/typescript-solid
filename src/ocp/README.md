@@ -20,7 +20,7 @@ Vamos levar em conta o seguinte cenário, imagine que o seu gerente decide imple
 
 Podemos resolver esse problema de diversas maneiras, ter um único método na classe e este método recebe o valor de desconto como parâmetro e fazer os cálculos de acordo com a lógica definida, ou também, uma injeção de dependência na qual a classe do carrinho possuiria um Desconto e trabalharia de forma dinâmica.
 
-Para resolver esse problemas, faremos uso de uma classe abstrata e aplicamos o padrão Strategy da GoF, observe a classe `ocp/entities/discount.ts`, é nela que implementamos os descontos e a classe do carrinho trabalha de forma dinâmica com o desconto, observe a injeção de dependência na classe do carrinho `ocr/entities/shopping-cart.ts`.
+Para resolver esse problemas, faremos uso de uma classe abstrata e aplicamos o padrão Strategy da GoF, observe a classe `ocp/entities/discount.ts`, é nela que implementamos os descontos e a classe do carrinho trabalha de forma dinâmica com o desconto, observe a injeção de dependência na classe do carrinho `ocp/entities/shopping-cart.ts`.
 
 
 ## Estrutura de pastas:
