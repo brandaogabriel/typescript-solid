@@ -57,6 +57,15 @@ Retirando essas responsabilidades da classe `shopping-cart-legacy.ts`, a mesma a
 
 **Verique a nova classe com responsabilidade única em `src/srp/entities/shopping-cart.ts`**
 
+Uma vez retirada a responsabilidade do carrinho, podemos notar que seria interessante ter uma classe **Order** em nosso sistema.
+
+- Observe a classe `order.ts` em `srp/entities/order.ts`.
+- Note que a mesma agora possui um carrinho de compras (shopping-cart) e também um **orderStatus**. Conseguimos resolver os problemas com uma classe.
+- A classe `order.ts` é responsável pelo gerenciamento do carrinho e também por fazer o checkout (compra).
+- Retiramos a responsabilidade de instanciar uma persistência e envio de mensagem da classe `order.ts` e colocamos apenas como uma injeção de dependência.
+- Persistência e Mensagem viram serviços externos. (Verificar `srp/services`).
+
+## Estrutura de pastas
 - Você pode achar um pouco estranho a quantidade de pastas e arquivos que estão na pasta **srp**, mas calma que eu vou te explicar.
 
 - Esse padrão é um pouco voltado para a arquitetura limpa (clean architecture).
@@ -66,16 +75,7 @@ Retirando essas responsabilidades da classe `shopping-cart-legacy.ts`, a mesma a
 3. `srp/services`, contém os serviços de terceiros, ou seja, partes da nossa aplicação que são vitais também, como banco de dados, serviços de mensagem, etc.
 4. `srp/main.ts`, contém todo o nosso código "sujo", inicialização de variáveis, classes, etc. É nele que iniciamos nossa aplicação.
 
-Agora que entendemos a estrutura de pastas, voltemos ao foco!
-
-Uma vez retirada a responsabilidade do carrinho, podemos notar que seria interessante ter uma classe **Order** em nosso sistema.
-
-- Observe a classe `order.ts` em `srp/entities/order.ts`.
-- Note que a mesma agora possui um carrinho de compras (shopping-cart) e também um **orderStatus**. Conseguimos resolver os problemas com uma classe.
-- A classe `order.ts` é responsável pelo gerenciamento do carrinho e também por fazer o checkout (compra).
-- Retiramos a responsabilidade de instanciar uma persistência e envio de mensagem da classe `order.ts` e colocamos apenas como uma injeção de dependência.
-- Persistência e Mensagem viram serviços externos. (Verificar `srp/services`).
-
+## Conclusão:
 Podemos concluir que, aplicando esse princípio em nossos projetos, percebemos o quão legível ele fica, com alta coesão, distribuição correta de responsabilidades e também fácil de entender.
 
 **Caso queira executar o projeto e testá-lo, execute o `srp/main.ts`.**
