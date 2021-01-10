@@ -36,6 +36,6 @@ Para resolver esse problemas, faremos uso de uma classe abstrata e aplicamos o p
 
 
 ## Conclusão:
-Podemos concluir que, aplicando esse princípio em nossos projetos, para o exemplo citado, percebemos o quanto flexível ele fica caso seja necessário adicionar novos tipos de desconto, bem como, aplicar uma lógica diferente para determinado tipo de desconto, sem mexer na classe do carrinho e em outras classes, apenas na classe do desconto.
+Podemos concluir que, aplicando esse princípio em nossos projetos, para o exemplo citado, percebemos o quanto flexível ele fica caso seja necessário adicionar novos tipos de desconto, bem como, aplicar uma lógica diferente para determinado tipo de desconto, sem mexer na classe do carrinho e em outras classes, apenas na classe do desconto. E de uma maneira mais geral, aplicando o princípio ganhamos extensibilidade, com a adição de novas funcionalidades, não precisamos alterar a classe já existente, mas sim, estendê-la. Com isso, podemos manter nosso código confiável e intacto, com um bom design e de fácil manutenibilidade.
 
 **Caso queira executar o projeto e testá-lo, execute o `ocp/main.ts`.**
