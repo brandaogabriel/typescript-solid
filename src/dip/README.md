@@ -6,7 +6,7 @@ Módulos de alto nível não devem ser dependentes dos módulos de baixo nível;
 ## Entendendo:
 O que o significado quer te explicar 🤔?
 
-**R**: Você deve criar módulos de baixo nível que dependam de outros módulos, porém estes são de alto nível.
+**R**: Você deve criar módulos que não dependam de módulos de baixo nível, mas sim de abstrações.
 
 Como assim 🤯?
 
