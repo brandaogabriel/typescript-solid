@@ -29,10 +29,10 @@ Para resolver esse problemas, faremos uso de uma classe abstrata e aplicamos o p
 
 - Esse padrão é um pouco voltado para a arquitetura limpa (clean architecture).
 
-1. `srp/entities`, contém o coração do nosso projeto, é nele que geralmente colocamos nossas entidades.
-2. `srp/entities/protocols`, contém as interfaces/tipos do nosso projeto.
-3. `srp/services`, contém os serviços de terceiros, ou seja, partes da nossa aplicação que são vitais também, como banco de dados, serviços de mensagem, etc.
-4. `srp/main.ts`, contém todo o nosso código "sujo", inicialização de variáveis, classes, etc. É nele que iniciamos nossa aplicação.
+1. `ocp/entities`, contém o coração do nosso projeto, é nele que geralmente colocamos nossas entidades.
+2. `ocp/entities/protocols`, contém as interfaces/tipos do nosso projeto.
+3. `ocp/services`, contém os serviços de terceiros, ou seja, partes da nossa aplicação que são vitais também, como banco de dados, serviços de mensagem, etc.
+4. `ocp/main.ts`, contém todo o nosso código "sujo", inicialização de variáveis, classes, etc. É nele que iniciamos nossa aplicação.
 
 
 ## Conclusão:

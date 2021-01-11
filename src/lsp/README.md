@@ -35,10 +35,10 @@ Algumas coisas que podem quebrar o princípio LSP:
 
 - Esse padrão é um pouco voltado para a arquitetura limpa (clean architecture).
 
-1. `srp/entities`, contém o coração do nosso projeto, é nele que geralmente colocamos nossas entidades.
-2. `srp/entities/protocols`, contém as interfaces/tipos do nosso projeto.
-3. `srp/services`, contém os serviços de terceiros, ou seja, partes da nossa aplicação que são vitais também, como banco de dados, serviços de mensagem, etc.
-4. `srp/main.ts`, contém todo o nosso código "sujo", inicialização de variáveis, classes, etc. É nele que iniciamos nossa aplicação.
+1. `lsp/entities`, contém o coração do nosso projeto, é nele que geralmente colocamos nossas entidades.
+2. `lsp/entities/protocols`, contém as interfaces/tipos do nosso projeto.
+3. `lsp/services`, contém os serviços de terceiros, ou seja, partes da nossa aplicação que são vitais também, como banco de dados, serviços de mensagem, etc.
+4. `lsp/main.ts`, contém todo o nosso código "sujo", inicialização de variáveis, classes, etc. É nele que iniciamos nossa aplicação.
 
 
 ## Conclusão:
