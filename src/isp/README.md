@@ -24,11 +24,11 @@ Observe agora as interfaces em `isp/entities/protocols/customer-protocol.ts`.
 
 Essas interfaces são implementadas pelas classes concretas em `isp/entities/customer.ts`.
 
-Note que em **customer.ts** cada interface esta atrelada a sua classe especifica e a classe só implementa o que de fato usa.
+Note que em **customer.ts** cada interface está atrelada a sua classe específica e a classe só implementa o que de fato usa.
 
 Dessa maneira, podemos assegurar que o ISP está intacto.
 
-**Obs**: Analíse a interface *DirtyCustomerProtocol* em `isp/entities/protocols/customer-protocol.ts` e perceba que ela tem vários atributos e caso fosse implementada em alguma das classes concretas citadas acima, estaria infringido o princípio em discussão.
+**Obs**: Analíse a interface *DirtyCustomerProtocol* em `isp/entities/protocols/customer-protocol.ts` e perceba que ela tem vários atributos e caso fosse implementada em alguma das classes concretas citadas acima, estaria infringindo o princípio em discussão.
 
 
 ## Estrutura de pastas:
@@ -44,7 +44,7 @@ Dessa maneira, podemos assegurar que o ISP está intacto.
 
 
 ## Conclusão:
-Podemos concluir que, analizando a fundo, existem casos em que as interfaces podem representar diversas classes e pode ocasionar problemas e principalmente quando utilizado com injeção de dependência, e que é resolvido através dos padrões de projeto. Com esse princípio implementado, podemos agora utilizá-lo em conjunto com o princípio da inversão de dependência.
+Podemos concluir que, analisando a fundo, existem casos em que as interfaces podem representar diversas classes e pode ocasionar problemas e principalmente quando utilizado com injeção de dependência, e que é resolvido através dos padrões de projeto. Com esse princípio implementado, podemos agora utilizá-lo em conjunto com o princípio da inversão de dependência.
 
 
 **Caso queira executar o projeto e testá-lo, execute o `isp/main.ts`.**
